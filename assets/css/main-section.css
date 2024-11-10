@@ -1,0 +1,58 @@
+/*Seção principal*/
+.main-section{
+    display: flex;
+    background-color: #d4e9e2;
+    background-image: url(../images/star-section.png);
+    background-position: 50%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 810px;
+    justify-content: center;
+    margin-bottom: 6.4rem;
+}
+
+.center-main{
+    display: flex;
+    width: 75%;
+}
+
+#divFreeCoffe{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    h1{
+        font-size: 38px;
+    };
+    p{
+        font-size: 20px;
+    };
+    span{
+        font-size: 20px;
+    }
+}
+#divButtons{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 30px;
+
+    span a{
+        color: black; 
+
+    }
+
+    span a:hover {
+        text-decoration: none;
+    }
+}
+
+.btn-green{
+    background-color: #008248;
+}
+.btn-green:hover{
+    background-color: #008248d7;
+}

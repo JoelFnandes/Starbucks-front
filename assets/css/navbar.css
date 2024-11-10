@@ -1,0 +1,84 @@
+/*header*/
+header{
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+header img{
+    height: 51px;
+    margin-right: 15px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    padding: 0px 8%;
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 15px;
+    height: auto;
+    padding: 38px 0px;
+}
+
+header nav a:hover{
+    color: #008248;
+}
+
+header .header-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .header-left a[href='#rewards']{
+    border-bottom: 4px solid #008248;
+}
+
+header .header-right{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 5.5em;
+
+}
+
+header .header-right a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 3em;
+    display: flex;
+    gap: 10px;
+}
+
+.header-right a:hover{
+    color: #008248;
+    img{
+        fill: currentColor;
+    }
+}
+
+.sub-header{
+    z-index: 1000;
+    display: flex;
+    position: sticky;
+    padding:  14px 0px;
+    background-color: #1e3932;
+    color: white;
+    width: 100%;
+    top: 0;  
+    box-shadow: 0 4px 4px 0 #0000001f, 0 0 2px 0 #0000003d
+}
+
+.sub-header h1{
+    font-size: 1em;
+    margin-left: 14%;
+    font-weight: 800;
+}

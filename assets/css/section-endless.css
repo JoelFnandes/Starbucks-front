@@ -1,0 +1,63 @@
+ /*Seção Endless extras*/
+ .section-endless{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6.4em;
+    gap: 3em;
+}
+
+.header-endless{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5em;
+    h1{
+        font-size: xx-large;
+    }
+}
+
+.contents-endless{
+    display: flex;
+    flex-direction: row;
+    padding: 0 2em;
+    gap: 4em;
+}
+
+.content-extras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    .head-extras{
+        img{
+            height: 112px;
+        }
+    }
+}
+
+.head-extras{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.description-extras{
+    text-align: center;
+    p{
+        margin-bottom: 15px;
+    }
+    a{
+        color: #008248;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,66 @@
+/*Seção Card or Cash*/
+.section-cardCash{
+    display: flex;
+    background-color: #f3f1e7 ;
+}
+.container-cardCash{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.header-cardCash{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2.5em;
+    h1{
+        font-size: x-large;
+    }
+    gap: 1em;
+}
+
+.content-rows-card{
+    padding: 3em 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    hr{
+        opacity: 40%;
+    }
+}
+.content-rows-card .row-card{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.5em;
+    .main-header{
+        width: calc(100%/5);
+    }
+    .card-cardCash {
+        width: calc(100%/3);
+    }
+}
+
+.row-card > .main-header > h2 > span{
+    font-size: medium;
+}
+
+.row-card > .card-cardCash{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 1em;
+    img{
+        height: auto;
+        width: 112px;
+    }
+}
+.cardCash-description{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    text-align: start;
+    width: 60%;
+}
