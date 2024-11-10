@@ -21,7 +21,7 @@
         }
 
         header img{
-            height: 50px;
+            height: 51px;
             margin-right: 10px;
         }
 
@@ -38,6 +38,10 @@
             margin-left: 15px;
             height: auto;
             padding: 38px 0px;
+        }
+
+        header nav a:hover{
+            color: #008248;
         }
         
         header .header-left{
@@ -64,10 +68,14 @@
             font-weight: bold;
             margin-right: 20px;
             display: flex;
+            gap: 10px;
         }
-
-        .header-right a img{
-            height: 1.5em;
+      
+        .header-right a:hover{
+            color: #008248;
+            img{
+                fill: currentColor;
+            }
         }
 
         button{
@@ -82,6 +90,10 @@
             border: 1px solid;
             border-radius: 15px;
         }
+
+        .btn-outline:hover{
+            background-color: #c9c6c65e;
+        }
     
         .btn-primary{
             font-size: 15px;
@@ -90,6 +102,10 @@
             color: white;
             border: none;
             border-radius: 15px;
+        }
+
+        .btn-primary:hover{
+            background-color: rgba(0, 0, 0, 0.733);
         }
 
         .sub-header{
@@ -164,6 +180,9 @@
         .btn-green{
             background-color: #008248;
         }
+        .btn-green:hover{
+            background-color: #008248d7;
+        }
 
         /*Seção start*/
         .section-start{
@@ -230,14 +249,18 @@
             align-items: center;
             gap: 3em;
             background-color: #f1f8f6;
+            padding: 2em 0 0 0;
+            h1{
+                font-size: xx-large;
+            }
             .points-bar{
                 display: flex;
                 flex-direction: row;
                 button{
                   background: none;  
                   border: none;
-                  font-size: x-large;
-                  padding: 1em;
+                  font-size: 24px;
+                  padding: 0.5em 1.5em;
                 }
                 .btn-25{
                         border-bottom: 4px solid #008248;
@@ -269,6 +292,7 @@
             align-items: center;
             justify-content: center;
             gap: 4em;
+            padding: 2em;
             img{
                 height: 200px;
             }
@@ -276,7 +300,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: 1.5em;
-            }
+            } 
         }
         
     </style>
@@ -291,7 +315,11 @@
                 <a href="#gift">GIFT CARDS</a>
             </div>
             <div class="header-right">
-                <a href="#"> <img src="assets/icons/location-dot-solid.svg"> Find a store</a>
+                <a href="#"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="24" height="24">
+                        <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" fill="currentColor"/>
+                    </svg> Find a store
+                </a>
                 <button class="btn-outline">Sign in</button>
                 <button class="btn-primary">Join now</button>
             </div>
@@ -299,6 +327,8 @@
         
     </header>
     <div class="sub-header"><h1>STARBUCKS REWARDS</h1></div>
+
+    <!-- Seção principal -->
     <section class="main-section">
         <div class="center-main">
             <div id="divFreeCoffe">
@@ -312,6 +342,7 @@
         </div>
     </section>
 
+    <!-- Seção start -->
     <section class="section-start">
         <div id="titleStart">
             <h1>Getting started is easy</h1>
@@ -336,9 +367,10 @@
         </div>
     </section>
 
+    <!-- Seção favorites -->
     <section class="section-favorites">
         <div class="header-favorites">
-            <h1>Getting started is easy</h1>
+            <h1>Get your favorites for free</h1>
             <div class="points-bar">
                 <button class="btn-25">25<span class="span-star-icon">★</span></button>
                 <button class="btn-100">100<span class="span-star-icon">★</span></button>
@@ -348,24 +380,66 @@
             </div>
         </div>
         <div class="contents-favorites">
-            <div class="content 25">
+            <div class="content point-25">
                 <img src="assets/images/25.png" alt="cup of coffee">
                 <div class="description">
                     <h2>Customize your drink</h2>
                     <p>Make your drink just right with an extra <br>espresso shot or a dash of your favorite syrup.</p>
                 </div>
             </div>
-            <div class="content-100" style="display: none;">
+            <div class="content point-100" style="display: none;">
                 <h2>Brewed hot or iced coffee or tea, bakery item, packaged snack and more</h2>
             </div>
-            <div class="content-200" style="display: none;">
+            <div class="content point-200" style="display: none;">
                 <h2>Handcrafted drink (Cold Brew, lattes and more) or hot breakfast</h2>
             </div>
-            <div class="content-300" style="display: none;">
+            <div class="content point-300" style="display: none;">
                 <h2>Sandwich, protein box or at-home coffee</h2>
             </div>
-            <div class="content-400" style="display: none;">
+            <div class="content point-400" style="display: none;">
                 <h2>Select Starbucks® merchandise</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção endeless -->
+    <section class="section-endless">
+        <div class="header-endless">
+            <h1>Endless Extras</h1>
+            <h4>Joining Starbucks® Rewards means unlocking access to benefits like 
+                quick and easy ordering,<br> tasty Rewards and—yes, free coffee.
+            </h4>
+        </div>
+        <div class="contents-endless">
+            <div class="content-extras">
+                <div class="head-extras">
+                    <img src="" alt="">
+                    <h3></h3>
+                </div>
+                <div class="description-extras">
+                    <p></p>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="content-extras">
+                <div class="head-extras">
+                    <img src="" alt="">
+                    <h3></h3>
+                </div>
+                <div class="description-extras">
+                    <p></p>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="content-extras">
+                <div class="head-extras">
+                    <img src="" alt="">
+                    <h3></h3>
+                </div>
+                <div class="description-extras">
+                    <p></p>
+                    <a href=""></a>
+                </div>
             </div>
         </div>
     </section>
