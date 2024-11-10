@@ -22,7 +22,7 @@
 
         header img{
             height: 51px;
-            margin-right: 10px;
+            margin-right: 15px;
         }
 
         header nav{
@@ -59,6 +59,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            margin-right: 5.5em;
 
         }
 
@@ -66,7 +67,7 @@
             text-decoration: none;
             color: black;
             font-weight: bold;
-            margin-right: 20px;
+            margin-right: 3em;
             display: flex;
             gap: 10px;
         }
@@ -280,6 +281,7 @@
             background-color: #d4e9e2;
             align-items: center;
             justify-content: center;
+            box-shadow: inset 0 7px 9px -7px #00000024;
         }
 
 
@@ -368,6 +370,74 @@
             }
         }
 
+        /*Seção Card or Cash*/
+        .section-cardCash{
+            display: flex;
+            background-color: #f3f1e7 ;
+        }
+        .container-cardCash{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+        }
+        .header-cardCash{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 2.5em;
+            h1{
+                font-size: x-large;
+            }
+            gap: 1em;
+        }
+
+        .content-rows-card{
+            padding: 3em 12%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            hr{
+                opacity: 40%;
+            }
+        }
+        .content-rows-card .row-card{
+            display: flex;
+            flex-direction: row;
+            margin-top: 2.5em;
+            .main-header{
+                width: calc(100%/5);
+            }
+            .card-cardCash {
+                width: calc(100%/3);
+            }
+        }
+
+        .row-card > .main-header > h2 > span{
+            font-size: medium;
+        }
+
+        .row-card > .card-cardCash{
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            gap: 1em;
+            img{
+                height: auto;
+                width: 112px;
+            }
+        }
+        .cardCash-description{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;
+            text-align: start;
+            width: 60%;
+        }
+
+        
     </style>
 </head>
 <body>
@@ -508,5 +578,60 @@
             </div>
         </div>
     </section>
+    <!-- Seção Cash or card -->
+     <section class="section-cardCash">
+        <div class="container-cardCash">
+            <div class="header-cardCash">
+                <h1>Cash or card, you earn Stars</h1>
+                <h4>No matter how you pay, you can earn Stars with your morning coffee. Those Stars add up to<br> (really delicious) Rewards.</h4>
+            </div>
+            <div class="content-rows-card">
+                <div class="row-card">
+                    <div class="main-header">
+                        <h2>1<span>★</span> per dollar</h2>
+                        <p>Pay as you go</p>
+                    </div>
+                    <div class="card-cardCash">
+                        <img src="assets/images/scan-and-pay.png" alt="">
+                        <div class="cardCash-description">
+                            <h3>Scan and pay separately</h3>
+                            <p>Use cash or credit/debit card at the register.</p>
+                        </div>
+                    </div>
+                    <div class="card-cardCash">
+                        <img src="assets/images/save-payment.webp" alt="">
+                        <div class="cardCash-description">
+                        <h3>Save payment in the app</h3>
+                        <p>Check-out faster by saving a credit/debit card or PayPal to your account.
+                             You’ll be able to order ahead or scan and pay at the register in one step.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row-card">
+                    <div class="main-header">
+                        <h2>2<span>★</span> per dollar</h2>
+                        <p>Add funds in the app</p>
+                    </div>
+                    <div class="card-cardCash">
+                        <img src="assets/images/preload.png" alt="">
+                        <div class="cardCash-description">
+                            <h3>Preload</h3>
+                            <p>To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any payment option. Scan and pay in one step or order ahead in the app.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-cardCash">
+                        <img src="assets/images/register-gift.webp" alt="">
+                        <div class="cardCash-description">
+                            <h3>Register your gift card</h3>
+                            <p>Then use it to pay through the app. You can even consolidate balances from multiple cards in one place.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
 </body>
 </html>
