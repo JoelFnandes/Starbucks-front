@@ -24,10 +24,6 @@
           font-size: 24px;
           padding: 0.5em 1.5em;
         }
-        .btn-25{
-                border-bottom: 4px solid #008248;
-         
-        }
         span{
             font-size: small;
         }
@@ -63,5 +59,17 @@
         display: flex;
         flex-direction: column;
         gap: 1.5em;
+        width: 22em;
     } 
+}
+
+.btn-points.active {
+    border-bottom: 4px solid #008248 !important;
+}
+.contents-favorites .content {
+    display: none;
+}
+
+.contents-favorites .content.active {
+    display: flex;
 }

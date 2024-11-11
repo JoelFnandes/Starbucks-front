@@ -1,6 +1,7 @@
 button{
     cursor: pointer;
     text-align: center;
+    text-wrap: nowrap;
 }    
 
 .btn-outline{
